@@ -1,0 +1,77 @@
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    /* CON ESTA CONVINACION PUEDO CENTRAR MI PAG  */
+    display: grid;
+    grid-gap: 20px;
+    /* Este grid grap le aplica un margen a los contenedores  */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+
+.contenedor>div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidbar,
+.contenedor .footer {
+    background: rebeccapurple;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .header {
+    background-color: brown;
+    color: azure;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.contenedor .contenido {
+    grid-column: span 2;
+}
+
+.contenedor .sidbar {
+    grid-column: 3/4;
+    background: blue;
+    /* abajo me permite centrar texto a  la izquierda derecha y a si flex box y css grid */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*  */
+    grid-row: 2/4;
+    /* TAMÑO DE MI SIDEBAR */
+    min-width: 100PX;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+    background-color: burlywood;
+    color: white;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .footer {
+    background: black;
+    color: white;
+    grid-column: span 3;
+}
+
+
+/*  QUE VALE VERGA ESTO 
+@media screen and ( max-width: 768px) {
+    .contenedor .contenido {
+        grid-column: 1/-1;
+    }
+    .contenedor .sidbar {
+        grid-column: 1/-1;
+    }
+    .contenedor .widget-1 {
+        grid-column: span 2;
+    }
+} */

@@ -1,0 +1,174 @@
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    /* CON ESTA CONVINACION PUEDO CENTRAR MI PAG  */
+    display: grid;
+    grid-gap: 20px;
+    /* Este grid grap le aplica un margen a los contenedores  */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header" "contenido contenido sidbar" "widget-1 widget-2 sidbar" "footer footer footer";
+    /*aqui especifico cuantas filas   */
+}
+
+.contenedor>div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidbar,
+.contenedor .footer {
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .header {
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    grid-area: header;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .contenido {
+    grid-area: contenido;
+    color: blue;
+    width: 360px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.p {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.contenedor .sidbar {
+    grid-column: 3/5;
+    background: none;
+    /* abajo me permite centrar texto a  la izquierda derecha y a si flex box y css grid */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*  */
+    /* TAMÑO DE MI SIDEBAR */
+    min-width: 100PX;
+    grid-area: sidbar;
+    margin-top: -130px;
+    margin-left: -180px;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2,
+.contenedor .widget-3 {
+    background-color: burlywood;
+    color: white;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .widget-1 {
+    grid-area: widget-1;
+}
+
+.contenedor .widget-2 {
+    grid-area: widget-2;
+}
+
+.contenedor .widget-3 {
+    grid-area: widget-3;
+    /* margin-top: -400px;
+    height: 50px;
+    width: 250px; */
+}
+
+.contenedor .footer {
+    background: black;
+    color: white;
+    grid-area: footer;
+}
+
+
+/* IMG */
+
+.tamano {
+    width: 2310px;
+    height: 750px;
+}
+
+@media screen and ( max-width: 1052px) {
+    .contenedor {
+        grid-template-areas: "header header header" "contenido contenido contenido" "sidbar sidbar sidbar" "widget-1 widget-1 widget-2 " "footer footer footer ";
+        /* grid-template-areas: "header header header" "contenido contenido sidbar" "widget-1 widget-2 sidbar" "widget-3 widget-3 sidbar  "; */
+    }
+    .contenedor .contenido {
+        width: auto;
+        height: auto;
+        margin-top: auto;
+        margin-left: auto;
+    }
+    .contenedor .sidbar {
+        margin-top: auto;
+        margin-left: auto;
+    }
+    .tamano {
+        width: 300px;
+        height: 550px;
+        /* width: 100px;
+        height: 100px; */
+    }
+    body {
+        padding-top: 70px;
+    }
+    .header {
+        height: 60px;
+        background-color: #f9128f;
+    }
+    .logo {
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        background: rgba(249, 18, 143, 0.7);
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60);
+        overflow-y: auto;
+        /*para barra de escrol cuando lo necesite*/
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav-menu-item {
+        line-height: 70px;
+    }
+    .nav-menu-link:hover,
+    .nav-menu-link-active {
+        background: none;
+        color: #eadaa2;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    .nav-menu_visible {
+        left: 0%;
+    }
+    .center {
+        flex-direction: column;
+    }
+}
