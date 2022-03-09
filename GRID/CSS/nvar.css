@@ -13,7 +13,7 @@
     text-decoration: none;
 }
 
-.logo {
+.logoi {
     font-size: 30px;
     font-weight: bold;
     padding: 0 10px;
@@ -31,7 +31,7 @@
     font-size: 20px;
 }
 
-.nav-menu {
+.nav-menui {
     display: flex;
     margin-right: 10px;
     list-style: none;
@@ -43,28 +43,28 @@
     color: gray;
 }
 
-.nav-menu-item {
-    font-size: 10px;
-    margin: 0 30px;
+.nav-menu-itemi {
+    font-size: 20px;
+    margin: 0 20px;
     line-height: 10px;
     text-transform: uppercase;
     width: max-content;
     color: gray;
 }
 
-.nav-menu-link:hover,
+.nav-menu-linki:hover,
 .nav-menu-link-active {
     background-color: rgba(10, 244, 246, 0.07);
     transition: 0.5s;
 }
 
-.nav-toggle {
-    color: white;
+.nav-togglei {
+    color: rebeccapurple;
     background: none;
     border: none;
-    font-size: 30px;
-    padding: 0 20px;
-    line-height: 60px;
+    /* font-size: 30px; */
+    /* padding: 0 20px; */
+    /* line-height: 60px; */
     display: none;
     /*para que no se vea en pantalla completa*/
 }
@@ -78,3 +78,53 @@
     border: none;
     font-size: 20px;
 }
+
+@media screen and ( max-width: 1052px) {
+    body {
+        padding-top: 70px;
+    }
+    .header {
+        height: 60px;
+    }
+    .logo {
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    .nav-menui {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 10px 0;
+        height: calc(100% - 60);
+        overflow-y: auto;
+        /*para barra de escrol cuando lo necesite*/
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav-menu-itemi {
+        line-height: 40px;
+    }
+    .nav-menu-link:hover,
+    .nav-menu-link-active {
+        background: none;
+        color: #eadaa2;
+    }
+    .nav-togglei {
+        display: block;
+    }
+    .nav-menu_visible {
+        left: 0px;
+        background: rgba( 255, 255, 255, 0.8);
+    }
+    .center {
+        flex-direction: column;
+    }
+}
+
+
+/* NAV DE PRUEBAS */
