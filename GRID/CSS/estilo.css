@@ -90,7 +90,7 @@
     width: 800px;
     /* EStilo card */
     background: rgba( 255, 255, 255, 0.8);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.20);
     backdrop-filter: blur( 4px);
     -webkit-backdrop-filter: blur( 4px);
     border-radius: 10px;
@@ -109,8 +109,7 @@
 }
 
 .contenedor .footer {
-    background: black;
-    color: white;
+    color: gray;
     grid-area: footer;
 }
 
@@ -124,7 +123,7 @@
 
 @media screen and ( max-width: 1052px) {
     .contenedor {
-        grid-template-areas: "header header header" "contenido contenido contenido" "sidbar sidbar sidbar" "widget-1 widget-1 widget-2 " "footer footer footer ";
+        grid-template-areas: "header header header" "contenido contenido contenido" "sidbar sidbar sidbar" "widget-1 widget-1 widget-1 " "footer footer footer ";
         /* grid-template-areas: "header header header" "contenido contenido sidbar" "widget-1 widget-2 sidbar" "widget-3 widget-3 sidbar  "; */
     }
     .contenedor .contenido {
@@ -144,9 +143,20 @@
         width: auto;
     }
     .contenedor .widget-2 {
-        margin-left: auto;
-        width: auto;
-        height: 20px;
+        height: 50px;
+        margin-top: 25px;
+        margin-left: -5px;
+        width: 50px;
+        font-size: 0.01px;
+        background: none;
+        box-shadow: none;
+    }
+    .pdbt {
+        padding-right: -850px;
+    }
+    .prefz {
+        font-size: 1px;
+        text-align: left;
     }
     .tamano {
         width: 300px;
