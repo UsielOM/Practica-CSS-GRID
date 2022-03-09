@@ -1,8 +1,9 @@
-.nav {
+.nav1 {
     display: flex;
     justify-content: space-between;
-    max-width: 992px;
+    max-width: 892px;
     margin: 0 auto;
+    max-height: 900px;
     background: none;
     color: gray;
 }
@@ -17,7 +18,7 @@
     font-weight: bold;
     padding: 0 10px;
     line-height: 5px;
-    color: blue;
+    color: rgba(0, 0, 240, 0.747);
     background: none;
     border: none;
 }
@@ -66,4 +67,14 @@
     line-height: 60px;
     display: none;
     /*para que no se vea en pantalla completa*/
+}
+
+.boton {
+    background-color: #3454d2;
+    border-radius: 5px;
+    height: 37px;
+    width: 150px;
+    color: white;
+    border: none;
+    font-size: 20px;
 }

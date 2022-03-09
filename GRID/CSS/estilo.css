@@ -35,7 +35,7 @@
 
 .contenedor .contenido {
     grid-area: contenido;
-    color: blue;
+    color: #1f3e72;
     width: 360px;
     height: 400px;
     margin-top: 50px;
@@ -61,27 +61,44 @@
     min-width: 100PX;
     grid-area: sidbar;
     margin-top: -130px;
-    margin-left: -180px;
+    margin-left: -500px;
 }
 
 .contenedor .widget-1,
 .contenedor .widget-2,
 .contenedor .widget-3 {
-    background-color: burlywood;
-    color: white;
+    color: #1f3e72;
     height: 100px;
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 .contenedor .widget-1 {
     grid-area: widget-1;
+    margin-top: -80px;
+    margin-left: 100px;
+    height: 50px;
+    width: 650px;
 }
 
 .contenedor .widget-2 {
     grid-area: widget-2;
+    /* height: 50px; */
+    margin-left: -670px;
+    width: 800px;
+    /* EStilo card */
+    background: rgba( 255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    /* CENTRADO DE TEXTO */
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
 .contenedor .widget-3 {
@@ -119,6 +136,17 @@
     .contenedor .sidbar {
         margin-top: auto;
         margin-left: auto;
+    }
+    .contenedor .widget-1 {
+        margin-top: auto;
+        margin-left: auto;
+        height: auto;
+        width: auto;
+    }
+    .contenedor .widget-2 {
+        margin-left: auto;
+        width: auto;
+        height: 20px;
     }
     .tamano {
         width: 300px;
