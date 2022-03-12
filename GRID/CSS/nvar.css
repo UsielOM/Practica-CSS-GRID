@@ -8,6 +8,26 @@
     color: gray;
 }
 
+.header1 {
+    background-color: rgba(150, 150, 150, 0.248);
+    /* width: 90%; */
+    max-width: 1050px;
+    margin: 20px auto;
+    /* CON ESTA CONVINACION PUEDO CENTRAR MI PAG  */
+    display: grid;
+    grid-gap: 20px;
+    max-width: 1092px;
+    margin: 0 auto;
+    max-height: 900px;
+    border-radius: 5px;
+    background: rgba( 255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 20px);
+    -webkit-backdrop-filter: blur( 20px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
 .nav-linkI {
     color: gray;
     text-decoration: none;

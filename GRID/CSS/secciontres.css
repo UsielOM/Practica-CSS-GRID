@@ -1,0 +1,45 @@
+.cajaT {
+    /* border: 4px solid black; */
+    background-color: white;
+    padding: 20px;
+}
+
+.grid-layout3 {
+    height: 650px;
+    background-color: limegreen;
+    /* grid-template-areas: 'ct1 ct2 ' 'ct1 ct3'; */
+    grid-template-areas: 'ct1 ct2' 'ct1 ct3';
+    grid-template-rows: 28% 75%;
+    grid-template-columns: 45%;
+    /* border: 1px solid black; */
+    display: grid;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.ct1 {
+    grid-area: ct1;
+    text-align: center;
+}
+
+.ct2 {
+    grid-area: ct2;
+}
+
+.ct3 {
+    grid-area: ct3;
+}
+
+.ct4 {
+    /* grid-area: ct1; */
+}
+
+.divct1 {
+    margin-left: -40px;
+    margin-top: 70px;
+}
+
+.border1 {
+    border: rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
