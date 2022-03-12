@@ -1,0 +1,88 @@
+.cajaC {
+    /* border: 4px solid black; */
+    background-color: white;
+    padding: 20px;
+}
+
+.grid-layout4 {
+    height: 650px;
+    background-color: limegreen;
+    grid-template-areas: 'cc1 cc1 cc2 ' 'cc3 cc4 cc2' 'cc5 cc6 cc2' 'cc7 cc7 cc7';
+    grid-template-rows: 30% 40% 40% 40%;
+    grid-template-columns: 30% 30% 40%;
+    /* border: 1px solid black; */
+    display: grid;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.cc1 {
+    grid-area: cc1;
+}
+
+.cc2 {
+    grid-area: cc2;
+    text-align: center;
+    /* margin-left: -20px; */
+    /* margin-top: 10px; */
+}
+
+.imgcc2 {
+    margin-left: -20px;
+    margin-top: 60px;
+}
+
+.cc3 {
+    grid-area: cc3;
+    ;
+}
+
+.cc4 {
+    grid-area: cc4;
+}
+
+.cc5 {
+    grid-area: cc5;
+}
+
+.cc6 {
+    grid-area: cc6;
+}
+
+.cc7 {
+    grid-area: cc7;
+    background-color: rgb(238, 243, 255);
+}
+
+.vaccination {
+    width: 180px;
+}
+
+.derechos {
+    margin-top: 60px;
+    width: 280px;
+}
+
+.about {
+    width: 130px;
+    margin-left: 400px;
+    margin-top: -250px;
+}
+
+.company {
+    width: 150px;
+    margin-left: 570px;
+    margin-top: -167px;
+}
+
+.support {
+    width: 150px;
+    margin-left: 770px;
+    margin-top: -167px;
+}
+
+.politic {
+    margin-top: 60px;
+    margin-left: 570px;
+    width: 280px;
+}
