@@ -25,3 +25,12 @@
 .gg-menu-oreos::after {
     bottom: 0
 }
+
+.triangulo {
+    width: 0;
+    height: 0;
+    border-left: 100px solid rgba(99, 99, 99, 0.131);
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    margin-left: -20px;
+}
